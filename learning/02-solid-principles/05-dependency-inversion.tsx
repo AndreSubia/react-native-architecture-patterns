@@ -5,20 +5,20 @@
  * Both should depend on abstractions.
  *
  * ✅ Principio de Inversión de Dependencias
- * 
+ *
  * Los módulos de alto nivel no deben depender de módulos de bajo nivel.
  * Ambos deben depender de abstracciones.
  */
 
 import React from "react";
-import { View, Button, StyleSheet, Text } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 /**
  * ✅ Abstraction: NotificationService interface
  *    Abstracción: interfaz NotificationService
  */
 interface NotificationService {
-    send(message: string): void;
+  send(message: string): void;
 }
 
 /**
@@ -26,9 +26,9 @@ interface NotificationService {
  *    Módulo de bajo nivel: implementación concreta usando push
  */
 class PushNotificationService implements NotificationService {
-    send(message: string) {
-        console.log(`Push notification sent: ${message}`);
-    }
+  send(message: string) {
+    console.log(`Push notification sent: ${message}`);
+  }
 }
 
 /**
@@ -36,9 +36,9 @@ class PushNotificationService implements NotificationService {
  *    Otro módulo de bajo nivel: implementación concreta con SMS
  */
 class SMSNotificationService implements NotificationService {
-    send(message: string) {
-        console.log(`SMS sent: ${message}`);
-    }
+  send(message: string) {
+    console.log(`SMS sent: ${message}`);
+  }
 }
 
 /**
@@ -46,19 +46,19 @@ class SMSNotificationService implements NotificationService {
  *    Componente de alto nivel depende de una abstracción, no de una implementación concreta
  */
 interface Props {
-    notifier: NotificationService;
+  notifier: NotificationService;
 }
 
 export function NotifyButton({ notifier }: Props) {
-    const handleNotify = () => {
-        notifier.send("Hello from NotifyButton!");
-    };
+  const handleNotify = () => {
+    notifier.send("Hello from NotifyButton!");
+  };
 
-    return (
-        <View style={styles.container}>
-            <Button title="Send Notification" onPress={handleNotify} />
-        </View>
-    );
+  return (
+    <View style={styles.container}>
+      <Button title="Send Notification" onPress={handleNotify} />
+    </View>
+  );
 }
 
 /**
@@ -66,18 +66,18 @@ export function NotifyButton({ notifier }: Props) {
  *    Ejemplo de uso
  */
 export function DIPExampleScreen() {
-    const pushNotifier = new PushNotificationService();
-    const smsNotifier = new SMSNotificationService();
+  const pushNotifier = new PushNotificationService();
+  const smsNotifier = new SMSNotificationService();
 
-    return (
-        <View style={styles.screen}>
-            <Text>Push Notifier:</Text>
-            <NotifyButton notifier={pushNotifier} />
+  return (
+    <View style={styles.screen}>
+      <Text>Push Notifier:</Text>
+      <NotifyButton notifier={pushNotifier} />
 
-            <Text>SMS Notifier:</Text>
-            <NotifyButton notifier={smsNotifier} />
-        </View>
-    );
+      <Text>SMS Notifier:</Text>
+      <NotifyButton notifier={smsNotifier} />
+    </View>
+  );
 }
 
 /**
@@ -91,11 +91,11 @@ export function DIPExampleScreen() {
  */
 
 const styles = StyleSheet.create({
-    container: {
-        marginVertical: 8,
-    },
-    screen: {
-        padding: 16,
-        gap: 12,
-    },
+  container: {
+    marginVertical: 8,
+  },
+  screen: {
+    padding: 16,
+    gap: 12,
+  },
 });

@@ -10,7 +10,7 @@
  * Type narrowing (`typeof`) is used to handle each case safely.
  *
  * ✅ Alias ​​de tipo y unión de tipos
- * 
+ *
  * Este ejemplo muestra cómo crear:
  * - Alias de tipos usando `type` para asignar un nombre a un tipo o a una unión de tipos.
  * - Tipos unión (`string | number`) para permitir múltiples tipos posibles.

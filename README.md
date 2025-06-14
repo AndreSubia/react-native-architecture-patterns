@@ -15,25 +15,34 @@ Repositorio personal para practicar y documentar mi proceso de aprendizaje en la
 ## Contents / Contenido
 
 ```
-01-typescript-fundamentals/
-├── 01-types/
-│   ├── basic-types.ts
-│   ├── interfaces.ts
-│   └── type-aliases.ts
-├── 02-functional-programming/
-│   ├── closures.ts
-│   ├── higher-order-functions.ts
-│   ├── immutability.ts
-│   ├── map-filter-reduce.ts
-│   └── pure-functions.ts
-├── 03-oop/
-│   ├── classes.ts
-│   ├── inheritance.ts
-└── └── polymorphism.ts
-02-solid-principles/
-├── 01-single-responsibility.tsx
-├── 02-open-closed-principle.tsx
-├── 03-liskov-substitution-principle.tsx
-├── 04-interface-segregation.tsx
-└── 05-dependency-inversion.tsx
+react-native-architecture-patterns/
+├── learning/
+│   ├── 01-typescript-fundamentals/
+│   │   ├── types/
+│   │   │   ├── basic-types.ts
+│   │   │   ├── interfaces.ts
+│   │   │   └── type-aliases.ts
+│   │   ├── 02-functional-programming/
+│   │   │   ├── closures.ts
+│   │   │   ├── higher-order-functions.ts
+│   │   │   ├── immutability.ts
+│   │   │   ├── map-filter-reduce.ts
+│   │   │   └── pure-functions.ts
+│   │   └── 03-oop/
+│   │       ├── classes.ts
+│   │       ├── inheritance.ts
+│   │       └── polymorphism.ts
+│   └── 02-solid-principles/
+│   │   ├── 01-single-responsibility.tsx
+│   │   ├── 02-open-closed-principle.tsx
+│   │   ├── 03-liskov-substitution-principle.tsx
+│   │   ├── 04-interface-segregation.tsx
+│   │   └── 05-dependency-inversion.tsx
+│   │
+│   └── 03-clean-architecture/
+│   │   ├── 01-overview..md
+│   │   ├── 02-entities.ts
+│   │   ├── 03-use-cases.ts
+│   │   ├── 04-interface-adapters.md
+│   │   └── 05-frameworks-drivers.md
 ```

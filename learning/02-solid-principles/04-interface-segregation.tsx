@@ -5,24 +5,24 @@
  * Divide large interfaces into smaller, more specific ones.
  *
  * ✅ Principio de segregación de interfaz
- * 
+ *
  * Los clientes no deben depender de interfaces que no usan.
  * Divide las interfaces grandes en otras más pequeñas y específicas.
  */
 
 import React from "react";
-import { View, TextInput, Button, StyleSheet } from "react-native";
+import { Button, StyleSheet, TextInput, View } from "react-native";
 
 /**
  * ❌ Bad: One giant interface for all kinds of forms
  *  Malo: Una interfaz gigante para todo tipo de formularios
  */
 interface FullFormProps {
-    value: string;
-    onChange: (text: string) => void;
-    onSubmit: () => void;
-    onReset: () => void;
-    onUpload?: () => void;
+  value: string;
+  onChange: (text: string) => void;
+  onSubmit: () => void;
+  onReset: () => void;
+  onUpload?: () => void;
 }
 
 /**
@@ -30,20 +30,20 @@ interface FullFormProps {
  *  Bueno: Divide en interfaces más pequeñas y enfocadas
  */
 interface BaseFormProps {
-    value: string;
-    onChange: (text: string) => void;
+  value: string;
+  onChange: (text: string) => void;
 }
 
 interface SubmitProps {
-    onSubmit: () => void;
+  onSubmit: () => void;
 }
 
 interface ResetProps {
-    onReset: () => void;
+  onReset: () => void;
 }
 
 interface UploadProps {
-    onUpload: () => void;
+  onUpload: () => void;
 }
 
 /**
@@ -53,12 +53,12 @@ interface UploadProps {
 type SimpleFormProps = BaseFormProps & SubmitProps;
 
 export function SimpleForm({ value, onChange, onSubmit }: SimpleFormProps) {
-    return (
-        <View style={styles.container}>
-            <TextInput value={value} onChangeText={onChange} style={styles.input} />
-            <Button title="Submit" onPress={onSubmit} />
-        </View>
-    );
+  return (
+    <View style={styles.container}>
+      <TextInput value={value} onChangeText={onChange} style={styles.input} />
+      <Button title="Submit" onPress={onSubmit} />
+    </View>
+  );
 }
 
 /**
@@ -68,20 +68,20 @@ export function SimpleForm({ value, onChange, onSubmit }: SimpleFormProps) {
 type UploadFormProps = BaseFormProps & SubmitProps & UploadProps & ResetProps;
 
 export function UploadForm({
-    value,
-    onChange,
-    onSubmit,
-    onUpload,
-    onReset,
+  value,
+  onChange,
+  onSubmit,
+  onUpload,
+  onReset,
 }: UploadFormProps) {
-    return (
-        <View style={styles.container}>
-            <TextInput value={value} onChangeText={onChange} style={styles.input} />
-            <Button title="Upload file" onPress={onUpload} />
-            <Button title="Reset" onPress={onReset} />
-            <Button title="Submit" onPress={onSubmit} />
-        </View>
-    );
+  return (
+    <View style={styles.container}>
+      <TextInput value={value} onChangeText={onChange} style={styles.input} />
+      <Button title="Upload file" onPress={onUpload} />
+      <Button title="Reset" onPress={onReset} />
+      <Button title="Submit" onPress={onSubmit} />
+    </View>
+  );
 }
 
 /**
@@ -95,13 +95,13 @@ export function UploadForm({
  */
 
 const styles = StyleSheet.create({
-    container: {
-        padding: 12,
-        gap: 8,
-    },
-    input: {
-        borderColor: "#aaa",
-        borderWidth: 1,
-        padding: 8,
-    },
+  container: {
+    padding: 12,
+    gap: 8,
+  },
+  input: {
+    borderColor: "#aaa",
+    borderWidth: 1,
+    padding: 8,
+  },
 });

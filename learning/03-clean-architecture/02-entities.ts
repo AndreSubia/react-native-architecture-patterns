@@ -16,10 +16,10 @@
  */
 
 export interface User {
-    id: string;
-    name: string;
-    email: string;
-    isEmailVerified: boolean;
+  id: string;
+  name: string;
+  email: string;
+  isEmailVerified: boolean;
 }
 
 /**
@@ -30,12 +30,12 @@ export interface User {
  */
 
 export function createUser(id: string, name: string, email: string): User {
-    return {
-        id,
-        name,
-        email,
-        isEmailVerified: false,
-    };
+  return {
+    id,
+    name,
+    email,
+    isEmailVerified: false,
+  };
 }
 
 /**

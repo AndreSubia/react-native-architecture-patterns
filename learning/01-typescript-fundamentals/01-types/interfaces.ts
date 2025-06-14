@@ -9,7 +9,7 @@
  * In this case, `greeter` expects a `Person` and returns a greeting string.
  *
  * ✅ Conceptos básicos de interfaces
- * 
+ *
  * Este ejemplo define una interfaz `Person` para describir la forma de un objeto.
  * - Las interfaces garantizan que el objeto tenga las propiedades requeridas con tipos correctos.
  * - Las propiedades opcionales se marcan con `?`.
@@ -33,11 +33,11 @@ console.log(greeter(user));
 
 /**
  * ✅ Function Interfaces
- * 
+ *
  * You can define the shape of a function using an interface.
  *
  * ✅ Interfaces de funciones
- * 
+ *
  * Puedes definir la forma de una función usando una interfaz.
  */
 
@@ -55,7 +55,7 @@ console.log(add(3, 7)); // 10
  * Use `readonly` to make a property immutable after initialization.
  *
  * ✅ Propiedades de solo lectura
- * 
+ *
  * Usa `readonly` para hacer una propiedad inmutable después de ser inicializada.
  */
 
@@ -74,7 +74,7 @@ myCar.model = "Yaris"; // ✅ allowed
  * Use `extends` to create a new interface that inherits from another.
  *
  * ✅ Herencia de interfaz
- * 
+ *
  * Usa `extends` para crear una nueva interfaz que hereda de otra.
  */
 

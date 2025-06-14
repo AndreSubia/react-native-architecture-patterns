@@ -13,7 +13,7 @@
  * - Never for functions that never return (e.g., throw errors)
  *
  * ✅ Tipos básicos en TypeScript
- * 
+ *
  * Este código muestra los tipos fundamentales en TypeScript:
  * - Booleano, Número (decimal, hexadecimal, binario, octal)
  * - Cadena de texto (String)
@@ -54,6 +54,7 @@ enum Color {
 const newColor: Color = Color.Green;
 
 // Any (avoid using it)
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 let notSure: any = 4;
 notSure = "maybe a string";
 

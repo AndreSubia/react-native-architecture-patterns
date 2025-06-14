@@ -60,7 +60,7 @@ shapes.forEach((shape) => {
  */
 
 abstract class Vehicle {
-  constructor(public brand: string) { }
+  constructor(public brand: string) {}
 
   // Abstract method (virtual function) - no implementation / Método abstracto (función virtual) - no implementación
   abstract move(distance: number): void;

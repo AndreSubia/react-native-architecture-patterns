@@ -8,7 +8,7 @@
  * Orquesta entidades para cumplir con las reglas del negocio.
  */
 
-import { createUser, User } from "./02-entities";
+import { User, createUser } from "./02-entities";
 
 /**
  * ✅ CreateUserUseCase with email validation /  Caso de uso CreateUserUseCase con validación de email
@@ -17,21 +17,18 @@ import { createUser, User } from "./02-entities";
  * Este caso de uso incluye una regla básica: el email debe contener "@".
  */
 
-export function createUserUseCase(
-    name: string,
-    email: string
-): User {
-    // ✅ Business Rule: Email must contain '@'
-    //  Regla de negocio: el email debe contener '@'
+export function createUserUseCase(name: string, email: string): User {
+  // ✅ Business Rule: Email must contain '@'
+  //  Regla de negocio: el email debe contener '@'
 
-    if (!email.includes("@")) {
-        throw new Error("Invalid email address / Dirección de email inválida");
-    }
+  if (!email.includes("@")) {
+    throw new Error("Invalid email address / Dirección de email inválida");
+  }
 
-    const id = crypto.randomUUID();
-    const user = createUser(id, name, email);
+  const id = crypto.randomUUID();
+  const user = createUser(id, name, email);
 
-    return user;
+  return user;
 }
 
 /**
@@ -39,8 +36,8 @@ export function createUserUseCase(
  */
 
 try {
-    const result = createUserUseCase("Andre", "andre@example.com");
-    console.log(result);
+  const result = createUserUseCase("Andre", "andre@example.com");
+  console.log(result);
 } catch (error) {
-    console.error(error);
+  console.error(error);
 }
