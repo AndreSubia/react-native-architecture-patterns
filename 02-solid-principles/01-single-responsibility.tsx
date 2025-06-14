@@ -1,10 +1,10 @@
 /**
  * ✅ Single Responsibility Principle (SRP)
- *
- * ✅ Principio de Responsabilidad Única
- *
+ * *
  * A class or module should have only one reason to change.
  * Un componente o clase debe tener una sola razón para cambiar.
+ *
+ * ✅ Principio de Responsabilidad Única
  *
  * In React Native, this often means separating UI, business logic, and data handling.
  * En React Native, esto significa separar la interfaz, la lógica de negocio y el manejo de datos.
@@ -55,6 +55,7 @@ const BadUserProfile = () => {
 // ✅ Buen ejemplo: Separar responsabilidades en componentes y hooks reutilizables
 
 // 📌 Hook: responsible for fetching user data (SRP: data fetching only)
+// 📌 Hook: responsable de obtener datos del usuario (SRP: solo obtención de datos)
 const useUser = () => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -72,6 +73,7 @@ const useUser = () => {
 };
 
 // 📌 UI Component: only responsible for rendering UI (SRP: presentation only)
+// 📌 Componente UI: solo responsable de renderizar la UI (SRP: solo presentación)
 const UserProfile = () => {
   const { user, loading } = useUser();
 
@@ -89,6 +91,7 @@ const UserProfile = () => {
 };
 
 // 📌 Presentational Component: clean and focused only on displaying data
+// 📌 Componente de presentación: limpio y enfocado solo en mostrar datos
 const UserCard = ({
   name,
   email,

@@ -12,6 +12,8 @@
  * - Null and Undefined values
  * - Never for functions that never return (e.g., throw errors)
  *
+ * ✅ Tipos básicos en TypeScript
+ * 
  * Este código muestra los tipos fundamentales en TypeScript:
  * - Booleano, Número (decimal, hexadecimal, binario, octal)
  * - Cadena de texto (String)

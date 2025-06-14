@@ -8,6 +8,8 @@
  *
  * In this case, `greeter` expects a `Person` and returns a greeting string.
  *
+ * ✅ Conceptos básicos de interfaces
+ * 
  * Este ejemplo define una interfaz `Person` para describir la forma de un objeto.
  * - Las interfaces garantizan que el objeto tenga las propiedades requeridas con tipos correctos.
  * - Las propiedades opcionales se marcan con `?`.
@@ -124,8 +126,7 @@ const dog1: DogInterface = { name: "Firulais", breed: "Labrador" };
 const dog2: DogType = { name: "Toby", breed: "Poodle" };
 
 /**
- * ✅ Only possible with type aliases
- * ✅ Solo es posible con alias de tipo
+ * ✅ Only possible with type aliases / Solo es posible con alias de tipo
  */
 type Status = "loading" | "success" | "error";
 
