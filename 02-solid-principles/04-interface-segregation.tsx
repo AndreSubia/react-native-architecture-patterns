@@ -15,7 +15,7 @@ import { View, TextInput, Button, StyleSheet } from "react-native";
 
 /**
  * ❌ Bad: One giant interface for all kinds of forms
- * ❌ Malo: Una interfaz gigante para todo tipo de formularios
+ *  Malo: Una interfaz gigante para todo tipo de formularios
  */
 interface FullFormProps {
     value: string;
@@ -27,7 +27,7 @@ interface FullFormProps {
 
 /**
  * ✅ Good: Split into smaller, focused interfaces
- * ✅ Bueno: Divide en interfaces más pequeñas y enfocadas
+ *  Bueno: Divide en interfaces más pequeñas y enfocadas
  */
 interface BaseFormProps {
     value: string;
@@ -48,7 +48,7 @@ interface UploadProps {
 
 /**
  * ✅ Usage example: SimpleForm only cares about typing and submitting
- * ✅ Ejemplo de uso: SimpleForm solo se preocupa por escribir y enviar
+ *  Ejemplo de uso: SimpleForm solo se preocupa por escribir y enviar
  */
 type SimpleFormProps = BaseFormProps & SubmitProps;
 
@@ -63,7 +63,7 @@ export function SimpleForm({ value, onChange, onSubmit }: SimpleFormProps) {
 
 /**
  * ✅ Usage example: UploadForm uses upload and reset too
- * ✅ Ejemplo de uso: UploadForm también usa subir y reiniciar
+ *  Ejemplo de uso: UploadForm también usa subir y reiniciar
  */
 type UploadFormProps = BaseFormProps & SubmitProps & UploadProps & ResetProps;
 

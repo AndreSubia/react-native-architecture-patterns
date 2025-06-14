@@ -21,7 +21,7 @@
 interface Person {
   firstName: string;
   lastName: string;
-  age?: number; // Optional
+  age?: number; // Optional / Opcional
 }
 
 function greeter(person: Person) {
@@ -33,9 +33,11 @@ console.log(greeter(user));
 
 /**
  * ✅ Function Interfaces
- *
+ * 
  * You can define the shape of a function using an interface.
  *
+ * ✅ Interfaces de funciones
+ * 
  * Puedes definir la forma de una función usando una interfaz.
  */
 
@@ -52,6 +54,8 @@ console.log(add(3, 7)); // 10
  *
  * Use `readonly` to make a property immutable after initialization.
  *
+ * ✅ Propiedades de solo lectura
+ * 
  * Usa `readonly` para hacer una propiedad inmutable después de ser inicializada.
  */
 
@@ -69,6 +73,8 @@ myCar.model = "Yaris"; // ✅ allowed
  *
  * Use `extends` to create a new interface that inherits from another.
  *
+ * ✅ Herencia de interfaz
+ * 
  * Usa `extends` para crear una nueva interfaz que hereda de otra.
  */
 
@@ -86,7 +92,7 @@ const myDog: Dog = {
 };
 
 /**
- * ✅ Interface vs. Type
+ * ✅ Interface vs. ype
  *
  * Interfaces and type aliases are both used to define the shape of objects,
  * but they have some differences in usage and capabilities.
@@ -96,18 +102,20 @@ const myDog: Dog = {
  */
 
 // ✅ Interface: used mainly for object structures
+//  Interfaz: se utiliza principalmente para estructuras de objetos
 interface UserInterface {
   name: string;
   age: number;
 }
 
 // ✅ Type alias: can represent unions, primitives, and more
+//  Alias ​​de tipo: puede representar uniones, tipos primitivos y más
 type UserType = {
   name: string;
   age: number;
 };
 
-// ✅ Usage is the same for both
+// ✅ Usage is the same for both /  El uso es el mismo para ambos
 const user1: UserInterface = { name: "Andre", age: 28 };
 const user2: UserType = { name: "Andre", age: 28 };
 

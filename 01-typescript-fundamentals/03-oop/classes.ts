@@ -2,9 +2,7 @@
  * ✅ Classes in TypeScript
  *
  * A class is a blueprint for creating objects with specific properties and methods.
- *
  * In Object-Oriented Programming (OOP), a class encapsulates data and behavior.
- *
  * ▶ Encapsulation allows restricting direct access to class members.
  */
 
@@ -19,9 +17,7 @@
  * ✅ Clases en TypeScript
  *
  * Una clase es un plano para crear objetos con propiedades y métodos específicos.
- *
  * En la Programación Orientada a Objetos (POO), una clase encapsula datos y comportamiento.
- *
  * ▶ El encapsulamiento permite restringir el acceso directo a los miembros de una clase.
  */
 
@@ -43,17 +39,17 @@ class Person {
     this.password = password;
   }
 
-  // ✅ Public method
+  // ✅ Public method / Método público
   greet(): string {
     return `Hello, my name is ${this.name}`;
   }
 
-  // 🔐 Protected method
+  // 🔐 Protected method / Método protegido
   protected getAge(): number {
     return this.age;
   }
 
-  // 🔒 Private method
+  // 🔒 Private method / Método privado
   private getPassword(): string {
     return this.password;
   }

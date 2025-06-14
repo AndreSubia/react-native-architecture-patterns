@@ -10,7 +10,7 @@
  * o devuelve una función como resultado.
  */
 
-// Example: function that takes a function as argument
+// Example: function that takes a function as argument / función que toma una función como argumento
 function mapArray(arr: number[], fn: (n: number) => number): number[] {
   const result: number[] = [];
   for (const n of arr) {
@@ -23,7 +23,7 @@ const numbers = [1, 2, 3];
 const doubled = mapArray(numbers, (n) => n * 2);
 console.log(doubled); // [2, 4, 6]
 
-// Example: function that returns another function
+// Example: function that returns another function / función que devuelve otra función
 function createAdder(x: number): (y: number) => number {
   return function (y: number): number {
     return x + y;

@@ -11,7 +11,7 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-// ✅ Base component
+// ✅ Base component / Componente base
 interface ButtonProps {
     label: string;
     onPress: () => void;
@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({ label, onPress }) => (
     </TouchableOpacity>
 );
 
-// ✅ Extended buttons that can substitute the base Button
+// ✅ Extended buttons that can substitute the base Button / Botones extendidos que pueden sustituir al botón base
 const PrimaryButton: React.FC<ButtonProps> = (props) => (
     <TouchableOpacity onPress={props.onPress} style={[styles.baseButton, styles.primary]}>
         <Text style={[styles.label, styles.white]}>{props.label}</Text>
@@ -36,7 +36,7 @@ const DangerButton: React.FC<ButtonProps> = (props) => (
     </TouchableOpacity>
 );
 
-// ✅ Usage
+// ✅ Usage / Uso
 export default function App() {
     const handlePress = (type: string) => {
         console.log(`Pressed: ${type}`);
@@ -46,7 +46,7 @@ export default function App() {
         <View style={styles.container}>
             <Text style={styles.title}>Liskov Substitution Principle</Text>
 
-            {/* These buttons can be used in place of the base Button */}
+            {/* These buttons can be used in place of the base Button / Estos botones pueden sustituir al botón base */}
             <Button label="Default" onPress={() => handlePress("default")} />
             <PrimaryButton label="Primary" onPress={() => handlePress("primary")} />
             <DangerButton label="Danger" onPress={() => handlePress("danger")} />

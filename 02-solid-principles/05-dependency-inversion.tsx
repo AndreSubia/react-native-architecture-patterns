@@ -4,6 +4,8 @@
  * High-level modules should not depend on low-level modules.
  * Both should depend on abstractions.
  *
+ * ✅ Principio de Inversión de Dependencias
+ * 
  * Los módulos de alto nivel no deben depender de módulos de bajo nivel.
  * Ambos deben depender de abstracciones.
  */
@@ -13,8 +15,7 @@ import { View, Button, StyleSheet, Text } from "react-native";
 
 /**
  * ✅ Abstraction: NotificationService interface
- *
- * ✅ Abstracción: interfaz NotificationService
+ *    Abstracción: interfaz NotificationService
  */
 interface NotificationService {
     send(message: string): void;
@@ -22,7 +23,7 @@ interface NotificationService {
 
 /**
  * ✅ Low-level module: concrete implementation using push
- * ✅ Módulo de bajo nivel: implementación concreta usando push
+ *    Módulo de bajo nivel: implementación concreta usando push
  */
 class PushNotificationService implements NotificationService {
     send(message: string) {
@@ -32,7 +33,7 @@ class PushNotificationService implements NotificationService {
 
 /**
  * ✅ Low-level module: another implementation using SMS
- * ✅ Otro módulo de bajo nivel: implementación concreta con SMS
+ *    Otro módulo de bajo nivel: implementación concreta con SMS
  */
 class SMSNotificationService implements NotificationService {
     send(message: string) {
@@ -42,7 +43,7 @@ class SMSNotificationService implements NotificationService {
 
 /**
  * ✅ High-level component depends on abstraction, not implementation
- * ✅ Componente de alto nivel depende de una abstracción, no de una implementación concreta
+ *    Componente de alto nivel depende de una abstracción, no de una implementación concreta
  */
 interface Props {
     notifier: NotificationService;
@@ -62,7 +63,7 @@ export function NotifyButton({ notifier }: Props) {
 
 /**
  * ✅ Usage Example
- * ✅ Ejemplo de uso
+ *    Ejemplo de uso
  */
 export function DIPExampleScreen() {
     const pushNotifier = new PushNotificationService();

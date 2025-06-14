@@ -10,10 +10,10 @@
  * - No tiene efectos secundarios (no modifica estados externos).
  */
 
-// Pure function example
+// Pure function example / Ejemplo de función pura
 export const add = (a: number, b: number): number => a + b;
 
-// Impure function example (modifies external state)
+// Impure function example (modifies external state) / Ejemplo de función impura (modifica estado externo)
 let total = 0;
 export const addToTotal = (num: number): number => {
   total += num;

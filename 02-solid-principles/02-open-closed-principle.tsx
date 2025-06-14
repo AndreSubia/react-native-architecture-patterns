@@ -13,7 +13,7 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-// Base Notification component (closed for modification)
+// Base Notification component (closed for modification) / Componente base de notificación (cerrado para modificación)
 interface NotificationProps {
     message: string;
     backgroundColor: string;
@@ -29,7 +29,7 @@ const Notification: React.FC<NotificationProps> = ({ message, backgroundColor, i
     );
 };
 
-// ✅ Extended Notification Components (open for extension)
+// ✅ Extended Notification Components (open for extension) / Componentes de notificación extendidos (abiertos para extensión)
 export const EmailNotification = ({ message }: { message: string }) => (
     <Notification message={message} backgroundColor="#e3f2fd" icon="📧" />
 );
@@ -42,7 +42,7 @@ export const PushNotification = ({ message }: { message: string }) => (
     <Notification message={message} backgroundColor="#fff3e0" icon="🔔" />
 );
 
-// ✅ Example usage
+// ✅ Example usage / Ejemplo de uso
 export default function App() {
     const [current, setCurrent] = React.useState<"email" | "sms" | "push">("email");
 
@@ -73,9 +73,7 @@ export default function App() {
  * ✅ What does this example do?
  *
  * `Notification` is a base component closed to modification.
- *
  * We create `EmailNotification`, `SMSNotification`, and `PushNotification` without modifying the original component, just by passing different props.
- *
  * The Open/Closed Principle is applied through composition and reuse.
  */
 
@@ -83,9 +81,7 @@ export default function App() {
  * ✅ ¿Qué hace este ejemplo?
  *
  * `Notification` es un componente base cerrado a modificación.
- *
  * Creamos `EmailNotification`, `SMSNotification`, y `PushNotification` sin modificar el componente original, solo pasándole props distintas.
- *
  * El principio de Open/Closed se aplica gracias a composición y reutilización.
  */
 

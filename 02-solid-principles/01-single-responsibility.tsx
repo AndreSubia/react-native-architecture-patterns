@@ -26,7 +26,7 @@ type User = {
 };
 
 // ❌ Bad Example: This component handles UI, fetching and formatting user data
-// ❌ Mal ejemplo: Este componente maneja la interfaz, la obtención y el formateo de datos
+//  Mal ejemplo: Este componente maneja la interfaz, la obtención y el formateo de datos
 
 const BadUserProfile = () => {
   const [user, setUser] = useState<User | null>(null);
@@ -53,10 +53,10 @@ const BadUserProfile = () => {
 };
 
 // ✅ Good Example: Separate concerns into reusable components and hooks
-// ✅ Buen ejemplo: Separar responsabilidades en componentes y hooks reutilizables
+//  Buen ejemplo: Separar responsabilidades en componentes y hooks reutilizables
 
 // 📌 Hook: responsible for fetching user data (SRP: data fetching only)
-// 📌 Hook: responsable de obtener datos del usuario (SRP: solo obtención de datos)
+//  Hook: responsable de obtener datos del usuario (SRP: solo obtención de datos)
 const useUser = () => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -74,7 +74,7 @@ const useUser = () => {
 };
 
 // 📌 UI Component: only responsible for rendering UI (SRP: presentation only)
-// 📌 Componente UI: solo responsable de renderizar la UI (SRP: solo presentación)
+//  Componente UI: solo responsable de renderizar la UI (SRP: solo presentación)
 const UserProfile = () => {
   const { user, loading } = useUser();
 
@@ -92,7 +92,7 @@ const UserProfile = () => {
 };
 
 // 📌 Presentational Component: clean and focused only on displaying data
-// 📌 Componente de presentación: limpio y enfocado solo en mostrar datos
+//  Componente de presentación: limpio y enfocado solo en mostrar datos
 const UserCard = ({
   name,
   email,

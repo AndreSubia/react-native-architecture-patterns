@@ -2,7 +2,6 @@
  * ✅ Polymorphism in TypeScript
  *
  * Polymorphism means that different classes can share the same method names but behave differently.
- *
  * This allows for flexible and reusable code.
  */
 
@@ -10,7 +9,6 @@
  * ✅ Polimorfismo en TypeScript
  *
  * El polimorfismo significa que diferentes clases pueden compartir los mismos nombres de métodos pero comportarse diferente.
- *
  * Esto permite un código flexible y reutilizable.
  */
 
@@ -40,7 +38,7 @@ class Square extends Shape {
   }
 }
 
-// Example: calculate areas
+// Example: calculate areas / calcular áreas
 const shapes: Shape[] = [new Circle(3), new Square(4)];
 
 shapes.forEach((shape) => {
@@ -64,10 +62,10 @@ shapes.forEach((shape) => {
 abstract class Vehicle {
   constructor(public brand: string) { }
 
-  // Abstract method (virtual function) - no implementation
+  // Abstract method (virtual function) - no implementation / Método abstracto (función virtual) - no implementación
   abstract move(distance: number): void;
 
-  // Concrete method
+  // Concrete method / Método concreto
   describe() {
     console.log(`This is a vehicle of brand ${this.brand}`);
   }
@@ -85,7 +83,7 @@ class Bicycle extends Vehicle {
   }
 }
 
-// Usage
+// Usage / Uso
 const car = new Car("Toyota");
 car.describe(); // Output: This is a vehicle of brand Toyota
 car.move(50); // Output: Toyota car moved 50 meters.

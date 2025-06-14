@@ -54,7 +54,6 @@ enum Color {
 const newColor: Color = Color.Green;
 
 // Any (avoid using it)
-// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 let notSure: any = 4;
 notSure = "maybe a string";
 
@@ -73,18 +72,15 @@ function warnUser(): void {
  * `null`: Una variable fue asignada intencionalmente con "ningún valor".
  */
 
-const u: undefined = undefined;
-const n: null = null;
-
-// ✅ Example: undefined (no assignment)
+// ✅ Example: undefined (no assignment) /  Ejemplo: undefined (no asignación)
 let a: undefined;
 console.log(a); // undefined
 
-// ✅ Example: null (explicit assignment)
+// ✅ Example: null (explicit assignment) /  Ejemplo: null (asignación explícita)
 const b: null = null;
 console.log(b); // null
 
-// Never (functions that never return)
+// Never (functions that never return) / (funciones que nunca retornan)
 function error(message: string): never {
   throw new Error(message);
 }
