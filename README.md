@@ -1,48 +1,29 @@
-# React Native Learning Repository
+# React Native Architecture & Patterns — Learning & Todo App
+
+<img src="./assets/images/react-native.jpg" alt="React Native Banner" width="100%" />
 
 ---
 
-## Description / Descripción
+## 📖 Description / Descripción
 
 **English:**  
-Personal repo to practice and document my learning journey on building scalable and maintainable React Native apps. Covers TypeScript fundamentals, functional programming, OOP, SOLID principles, Clean Architecture, and design patterns with practical examples.
+Personal repo to learn and document how to build better React Native apps with Expo & TypeScript, functional programming, OOP, SOLID principles, Clean Architecture, and design patterns — with a hands-on ToDo app to put theory into practice.
 
 **Español:**  
-Repositorio personal para practicar y documentar mi proceso de aprendizaje en la construcción de aplicaciones React Native escalables y mantenibles. Incluye fundamentos de TypeScript, programación funcional, POO, principios SOLID, Arquitectura Limpia y patrones de diseño con ejemplos prácticos.
+Repositorio personal para aprender y documentar cómo construir mejores aplicaciones en React Native usando Expo & TypeScript, programación funcional, POO, principios SOLID, Arquitectura Limpia y patrones de diseño — con una aplicación práctica de tareas (ToDo) para aplicar lo aprendido.
 
 ---
 
-## Contents / Contenido
+## 📁 Contents / Contenido
 
-```
-react-native-architecture-patterns/
-├── learning/
-│   ├── 01-typescript-fundamentals/
-│   │   ├── types/
-│   │   │   ├── basic-types.ts
-│   │   │   ├── interfaces.ts
-│   │   │   └── type-aliases.ts
-│   │   ├── 02-functional-programming/
-│   │   │   ├── closures.ts
-│   │   │   ├── higher-order-functions.ts
-│   │   │   ├── immutability.ts
-│   │   │   ├── map-filter-reduce.ts
-│   │   │   └── pure-functions.ts
-│   │   └── 03-oop/
-│   │       ├── classes.ts
-│   │       ├── inheritance.ts
-│   │       └── polymorphism.ts
-│   └── 02-solid-principles/
-│   │   ├── 01-single-responsibility.tsx
-│   │   ├── 02-open-closed-principle.tsx
-│   │   ├── 03-liskov-substitution-principle.tsx
-│   │   ├── 04-interface-segregation.tsx
-│   │   └── 05-dependency-inversion.tsx
-│   │
-│   └── 03-clean-architecture/
-│   │   ├── 01-overview..md
-│   │   ├── 02-entities.ts
-│   │   ├── 03-use-cases.ts
-│   │   ├── 04-interface-adapters.md
-│   │   └── 05-frameworks-drivers.md
-```
+**English:**  
+This repository is organized into two main parts:
+
+- 📱 **React Native App (root directory):** A practical ToDo app built with React Native. It applies the concepts from the [learning/](learning/README.md) section and explores advanced topics like environment configuration (*flavors* for dev and prod).
+- 📚 `learning/`: A structured collection of foundational concepts, examples, and patterns — including TypeScript basics, functional programming, OOP, SOLID, Clean Architecture, and design patterns.
+
+**Español:**  
+Este repositorio está organizado en dos partes principales:
+
+- 📱 **Aplicación React Native (directorio raíz):** Una app práctica de tareas (ToDo) construida con React Native. Aplica los conceptos vistos en la carpeta [learning/](learning/README.md) y explora temas avanzados como configuración de entornos (*flavors* para desarrollo y producción).
+- 📚 `learning/`: Una colección estructurada de conceptos fundamentales, ejemplos y patrones — incluyendo fundamentos de TypeScript, programación funcional, POO, principios SOLID, Arquitectura Limpia y patrones de diseño.
