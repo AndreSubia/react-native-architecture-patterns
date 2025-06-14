@@ -30,4 +30,10 @@ Repositorio personal para practicar y documentar mi proceso de aprendizaje en la
 │   ├── classes.ts
 │   ├── inheritance.ts
 └── └── polymorphism.ts
+02-solid-principles/
+├── 01-single-responsibility.tsx
+├── 02-open-closed-principle.tsx
+├── 03-liskov-substitution-principle.tsx
+├── 04-interface-segregation.tsx
+└── 05-dependency-inversion.tsx
 ```

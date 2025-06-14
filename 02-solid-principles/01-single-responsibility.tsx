@@ -2,12 +2,13 @@
  * ✅ Single Responsibility Principle (SRP)
  * *
  * A class or module should have only one reason to change.
- * Un componente o clase debe tener una sola razón para cambiar.
+ * In React Native, this often means separating UI, business logic, and data handling.
  *
  * ✅ Principio de Responsabilidad Única
- *
- * In React Native, this often means separating UI, business logic, and data handling.
+ * 
  * En React Native, esto significa separar la interfaz, la lógica de negocio y el manejo de datos.
+ * Un componente o clase debe tener una sola razón para cambiar.
+ * 
  */
 
 import React, { useEffect, useState } from "react";

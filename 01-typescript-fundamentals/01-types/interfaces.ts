@@ -18,13 +18,13 @@
  * En este caso, `greeter` espera un `Person` y devuelve un saludo como cadena.
  */
 
-interface PersonInterface {
+interface Person {
   firstName: string;
   lastName: string;
   age?: number; // Optional
 }
 
-function greeter(person: PersonInterface) {
+function greeter(person: Person) {
   return `Hello, ${person.firstName} ${person.lastName}`;
 }
 
@@ -55,12 +55,12 @@ console.log(add(3, 7)); // 10
  * Usa `readonly` para hacer una propiedad inmutable después de ser inicializada.
  */
 
-interface CarInterface {
+interface Car {
   readonly brand: string;
   model: string;
 }
 
-const myCar: CarInterface = { brand: "Toyota", model: "Corolla" };
+const myCar: Car = { brand: "Toyota", model: "Corolla" };
 myCar.model = "Yaris"; // ✅ allowed
 // car.brand = "Honda"; // ❌ Error: brand is readonly
 
@@ -72,15 +72,15 @@ myCar.model = "Yaris"; // ✅ allowed
  * Usa `extends` para crear una nueva interfaz que hereda de otra.
  */
 
-interface AnimalInterface {
+interface Animal {
   name: string;
 }
 
-interface DogInterface extends AnimalInterface {
+interface Dog extends Animal {
   breed: string;
 }
 
-const myDog: DogInterface = {
+const myDog: Dog = {
   name: "Toby",
   breed: "Golden Retriever",
 };
@@ -122,7 +122,7 @@ type DogType = AnimalType & {
   breed: string;
 };
 
-const dog1: DogInterface = { name: "Firulais", breed: "Labrador" };
+const dog1: Dog = { name: "Firulais", breed: "Labrador" };
 const dog2: DogType = { name: "Toby", breed: "Poodle" };
 
 /**
