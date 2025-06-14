@@ -1,6 +1,6 @@
 /**
  * ✅ Basic Types in TypeScript
- * 
+ *
  * This code demonstrates fundamental TypeScript types:
  * - Boolean, Number (including decimal, hex, binary, octal)
  * - String
@@ -11,7 +11,7 @@
  * - Void for functions without return
  * - Null and Undefined values
  * - Never for functions that never return (e.g., throw errors)
- * 
+ *
  * Este código muestra los tipos fundamentales en TypeScript:
  * - Booleano, Número (decimal, hexadecimal, binario, octal)
  * - Cadena de texto (String)
@@ -23,7 +23,6 @@
  * - Null y Undefined
  * - Never para funciones que nunca retornan (ejemplo: lanzan errores)
  */
-
 
 // Boolean
 const isDone: boolean = false;
@@ -42,48 +41,48 @@ const list1: number[] = [1, 2, 3];
 const list2: Array<number> = [1, 2, 3];
 
 // Tuple (array with strict types)
-let tuple: [string, number];
-tuple = ["hello", 10]; // Correct
+const tuple: [string, number] = ["hello", 10]; // Correct
 
 // Enum
 enum Color {
-    Red,
-    Green,
-    Blue,
+  Red = "red",
+  Green = "green",
+  Blue = "blue",
 }
 const newColor: Color = Color.Green;
 
 // Any (avoid using it)
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 let notSure: any = 4;
 notSure = "maybe a string";
 
 // Void (functions without return value)
 function warnUser(): void {
-    console.log("This is a warning message");
+  console.log("This is a warning message");
 }
 
 /**
  * ✅ Null vs Undefined
- * 
+ *
  * `undefined`: A variable has been declared but not assigned a value yet.
  * `null`: A variable is explicitly assigned to have "no value".
- * 
+ *
  * `undefined`: Una variable ha sido declarada pero aún no tiene un valor asignado.
  * `null`: Una variable fue asignada intencionalmente con "ningún valor".
  */
 
-let u: undefined = undefined;
-let n: null = null;
+const u: undefined = undefined;
+const n: null = null;
 
 // ✅ Example: undefined (no assignment)
 let a: undefined;
 console.log(a); // undefined
 
 // ✅ Example: null (explicit assignment)
-let b: null = null;
+const b: null = null;
 console.log(b); // null
 
 // Never (functions that never return)
 function error(message: string): never {
-    throw new Error(message);
+  throw new Error(message);
 }
