@@ -10,6 +10,8 @@ Each layer depends only on the inner layers, keeping the **core business logic i
 
 ## 🔄 Main Layers
 
+<img src="./images/clean-architecture.png" alt="React Native Banner" width="100%" />
+
 1. **Entities**  
    Core business models and logic. They are **pure TypeScript** and don't depend on frameworks.
 
@@ -43,6 +45,8 @@ Cada capa depende solo de las capas internas, manteniendo la **lógica de negoci
 ---
 
 ## 🔄 Capas principales
+
+<img src="./images/clean-architecture.png" alt="React Native Banner" width="100%" />
 
 1. **Entidades**  
    Modelos y lógica de negocio central. Son **TypeScript puro**, sin depender de frameworks.
