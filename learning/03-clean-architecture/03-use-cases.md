@@ -24,4 +24,4 @@ Definen el comportamiento de la aplicación y son independientes de la UI, el al
 
 ---
 
-## [💡 See Example / Ver Ejemplo](../../src/domain/use-cases/createTask.ts)
+## [💡 See Example / Ver Ejemplo](../../src/domain/use-cases/getAllTasks.ts)

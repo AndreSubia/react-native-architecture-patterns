@@ -1,14 +1,17 @@
-# 🧱 Clean Architecture in React Native
+# 🧱 Clean Architecture in React Native / Arquitectura Limpia en React Native
 
-## ✅ Overview
+## ✅ Overview / Descripción general
 
 Clean Architecture is a software design philosophy that separates code into layers of responsibility, making it **scalable**, **testable**, and **maintainable**.
-
 Each layer depends only on the inner layers, keeping the **core business logic isolated** from frameworks and infrastructure.
+
+
+La Arquitectura Limpia es una filosofía de diseño de software que separa el código en capas de responsabilidad, haciéndolo **escalable**, **testeable** y **mantenible**.
+Cada capa depende solo de las capas internas, manteniendo la **lógica de negocio central aislada** de frameworks e infraestructura.
 
 ---
 
-## 🔄 Main Layers
+## 🔄 Main Layers / Capas principales
 
 <img src="./images/clean-architecture.png" alt="React Native Banner" width="100%" />
 
@@ -26,28 +29,6 @@ Each layer depends only on the inner layers, keeping the **core business logic i
 
 ---
 
-## 💡 Benefits
-
-- Clear **separation of concerns**  
-- Easy to **test**, **replace technologies**, or **scale**
-- Business rules remain untouched by UI or framework changes
-
----
-
-# 🧱 Arquitectura Limpia en React Native
-
-## ✅ Descripción general
-
-La Arquitectura Limpia es una filosofía de diseño de software que separa el código en capas de responsabilidad, haciéndolo **escalable**, **testeable** y **mantenible**.
-
-Cada capa depende solo de las capas internas, manteniendo la **lógica de negocio central aislada** de frameworks e infraestructura.
-
----
-
-## 🔄 Capas principales
-
-<img src="./images/clean-architecture.png" alt="React Native Banner" width="100%" />
-
 1. **Entidades**  
    Modelos y lógica de negocio central. Son **TypeScript puro**, sin depender de frameworks.
 
@@ -62,7 +43,13 @@ Cada capa depende solo de las capas internas, manteniendo la **lógica de negoci
 
 ---
 
-## 💡 Beneficios
+## 💡 Benefits / Beneficios
+
+- Clear **separation of concerns**  
+- Easy to **test**, **replace technologies**, or **scale**
+- Business rules remain untouched by UI or framework changes
+
+---
 
 - Clara **separación de responsabilidades**  
 - Fácil de **probar**, **cambiar tecnología** o **escalar**  

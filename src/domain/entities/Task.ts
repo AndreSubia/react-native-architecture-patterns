@@ -10,6 +10,6 @@
 
 export interface Task {
   id: string; // Unique identifier  / Identificador único
-  title: string; // Task description   / Descripción de la tarea
+  description: string; // Task description   / Descripción de la tarea
   completed: boolean; // Completion status  / Estado de completado
 }

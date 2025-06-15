@@ -12,6 +12,7 @@
     "check": "biome check --write ."
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "2.1.2",
     "expo": "~53.0.11",
     "expo-constants": "~17.1.6",
     "expo-linking": "~7.1.5",
