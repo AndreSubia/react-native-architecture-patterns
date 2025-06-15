@@ -17,6 +17,7 @@ Explora los fundamentos de TypeScript: tipos, interfaces y alias de tipos — to
 - `types/`
   - `basic-types.ts`
   - `interfaces.ts`
+  - `promises.ts`
   - `type-aliases.ts`
 
 ---

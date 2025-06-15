@@ -92,7 +92,7 @@ const myDog: Dog = {
 };
 
 /**
- * ✅ Interface vs. ype
+ * ✅ Interface vs. Type
  *
  * Interfaces and type aliases are both used to define the shape of objects,
  * but they have some differences in usage and capabilities.
