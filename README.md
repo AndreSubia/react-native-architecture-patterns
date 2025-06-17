@@ -1,4 +1,4 @@
-# React Native Architecture & Patterns — Learning & Todo App
+# React Native Architecture & Patterns — Learning & ToDo App
 
 <img src="./assets/images/react-native.jpg" alt="React Native Banner" width="100%" />
 
@@ -27,3 +27,5 @@ Este repositorio está organizado en dos partes principales:
 
 - 📱 **Aplicación React Native (directorio raíz):** Una app práctica de tareas (ToDo) construida con React Native. Aplica los conceptos vistos en la carpeta [learning/](learning/README.md) y explora temas avanzados como configuración de entornos (*flavors* para desarrollo y producción).
 - 📚 `learning/`: Una colección estructurada de conceptos fundamentales, ejemplos y patrones — incluyendo fundamentos de TypeScript, programación funcional, POO, principios SOLID, Arquitectura Limpia y patrones de diseño.
+
+<img src="./assets/images/todoapp.png" alt="React Native Banner" width="100%" />
