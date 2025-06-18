@@ -3,18 +3,18 @@ import { TaskRepository } from "../../domain/repositories/TaskRepository";
 
 export const SupabaseTaskRepository: TaskRepository = {
   async getAllTasks(): Promise<Task[]> {
-    // Fetch tasks from local AsyncStorage
-    // Obtener tareas desde AsyncStorage local
+    // Fetch tasks
+    // Obtener tareas
     return [];
   },
 
   async addTask(task: Task): Promise<void> {
-    // Add a new task to storage
-    // Agregar una nueva tarea al almacenamiento
+    // Add a new task
+    // Agregar una nueva tarea
   },
 
   async updateTask(task: Task): Promise<void> {
-    // Update a task by ID in storage
-    // Actualizar una tarea por ID en el almacenamiento
+    // Update a task
+    // Actualizar una tarea
   },
 };

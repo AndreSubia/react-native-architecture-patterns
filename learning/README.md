@@ -76,6 +76,13 @@ Aprende Arquitectura Limpia aplicada al desarrollo móvil: separación clara de 
 
 ---
 
+## 🧭 Patterns / Patrones
+
+- `01-repository
+.md` – Conceptual introduction / Introducción conceptual
+
+https://refactoring.guru/design-patterns
+
 ## 🚀 Usage / Uso
 
 This section is **educational**, providing isolated examples and principles you can apply directly in the `todo-app/` at the root of this repo.
